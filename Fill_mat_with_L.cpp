@@ -68,16 +68,10 @@ void pav(int l_colt, int c_colt, int lat, int l_lipsa, int c_lipsa){
             int l_centru = l_colt + lat - (1 - dl[i]);
             int c_centru = c_colt + lat - (1 - dc[i]);
             a[l_centru][c_centru] = dala_loc;
+        
             pav(l_colt_c, c_colt_c, lat, l_centru, c_centru);
 
-            for (int i = 0; i < (1 << n); i++){
-                for (int j = 0; j < (1 << n); j++){
-                    cout << a[i][j] << " ";
-                }
-                cout << "\n";
-            }
-            cout << '\n';
-
+        
         }
         else
             pav(l_colt_c, c_colt_c, lat, l_lipsa, c_lipsa);
@@ -93,6 +87,12 @@ int main(){
     c--;
     pav(0, 0, 1 << n, l, c);
     
+    for(int i = 0; i < (1 << n); i++){
+        for (int j = 0; j < (1 << n); j++){
+            cout << a[i][j] << " ";
+        }
+        cout << "\n";
+    }
 
 
     return 0;
