@@ -17,10 +17,7 @@ static inline int64_t GetTicks() {
 int main(){
 
     fastio;
-
-    double CPU_freq = 0.0;
-    CPU_freq = double(GetTicks());
-
+    
     int64_t start = GetTicks();
 
     ///Code here
@@ -29,9 +26,9 @@ int main(){
 
     cout << "\n" << start << ' ' << end << ' ' << end - start << '\n';
 
-    double elapsedTimeSeconds = (double)(end - start) / CPU_freq;
+    double elapsedTimeSeconds = (double)(end - start);
 
-    cout << "Elapsed time: " << fixed << setprecision(5) << elapsedTimeSeconds << " seconds";
+    cout << "Elapsed time: " << fixed << setprecision(3) << elapsedTimeSeconds / 1e7 << " seconds";
 
 
     return 0;
