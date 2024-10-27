@@ -45,22 +45,22 @@ ofstream cout("date.out");
 
 using namespace std;
 
-int dx[] = {1,-1,0,0};
-int dy[] = {0,0,1,-1};
+int dx[] = {1,-1,0,0}; /// Ne ajuta sa calculam vecinii (jos, sus)
+int dy[] = {0,0,1,-1}; ///(dreapta, stanga)
 
 int n,m;
-int a[1005][1005];
-int b[1005][1005];
+int a[1005][1005]; /// Matricea initiala -> 1 reprezinta zid, 0 casuta libera
+int b[1005][1005]; /// Matricea costului drumului.
 
 bool inmat(int i,int j){
 
-    return i >= 1 && i <= n && j >= 1 && j <= m;
+    return i >= 1 && i <= n && j >= 1 && j <= m; /// Verificam sa nu iesim din matrice.
 
 }
 
 void lee(){
 
-    queue<pair<int,int> > q;
+    queue<pair<int,int> > q; /// Retinem in coada pozitiile din matrice
     q.push({1,1});
     b[1][1] = 1;
     while(!q.empty()){
@@ -71,14 +71,14 @@ void lee(){
         for(int d = 0 ; d < 4 ; ++d){
             int ii = dx[d] + x;
             int jj = dy[d] + y;
-            if(inmat(ii,jj) && a[ii][jj] != 1 && b[ii][jj] == 0){
+            if(inmat(ii,jj) && a[ii][jj] != 1 && b[ii][jj] == 0){ /// Daca suntem  in matrice, nu avem zid si nu am trecut pe acolo actualizam costul pe casuta curenta
                 b[ii][jj] = b[x][y] + 1;
                 q.push({ii,jj});
             }
         }
     }
-    cout << b[n][m] - 1;
-}
+    cout << b[n][m] - 1; /// Afisam costul drumului (1,1) -> (n,m)
+} 
 
 int main(){
     
