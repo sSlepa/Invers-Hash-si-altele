@@ -16,6 +16,7 @@ This repository features a diverse collection of advanced algorithms and data st
 3. **Primality Testing**
    - **Rabin-Miller Test (`RabinMiller.cpp`)**: A probabilistic algorithm to test if a number is prime.
    - **Fermat's Little Theorem (`FermaPrimeChecker.cpp`)**: Fastes way to check if a number is prime. Can be used even for N <= 10<sup>18
+   - **Simple Sieve of Eratosthenes Algorithm (`Sieve.cpp`)**: An algorithm used to find all prime numbers up to a given limit.
 
 4. **Subarray Divisibility (`Subarray_Divisibility.cpp`)**
    - CSES.fi problem that was implemented using red-black trees instead of a map.
