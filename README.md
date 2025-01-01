@@ -61,10 +61,3 @@ g++ -std=c++17 -o output filename.cpp
 ./output
 ```
 
-## Contribution
-
-Contributions are welcome! Feel free to submit pull requests with improvements, new algorithms, or additional documentation.
-
-## License
-
-This repository is open-sourced under the MIT License. Refer to the LICENSE file for more information.
