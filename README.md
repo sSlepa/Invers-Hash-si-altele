@@ -21,9 +21,9 @@ This repository features a diverse collection of advanced algorithms and data st
 4. **Subarray Divisibility (`Subarray_Divisibility.cpp`)**
    - CSES.fi problem that was implemented using red-black trees instead of a map.
 
-5. **Hashing Techniques and fast c**
+5. **Hashing Techniques and fast exponentiation**
    - **Hash pairs for unordered_map (`HashPairs_ExponentialLOG.cpp`)**: Advanced hash function techniques for specific use cases.
-   - **Fast fast exponentiation (`HashPairs_ExponentialLOG.cpp`)**: Fastes way to raise a number to a power.
+   - **Fast exponentiation (`HashPairs_ExponentialLOG.cpp`)**: Fastes way to raise a number to a power.
 
 ### Data Structures
 
