@@ -9,3 +9,6 @@
 
 # Don't ignore directories (needed for git to traverse subdirectories)
 !*/
+
+# But ignore these directories
+.vscode/
