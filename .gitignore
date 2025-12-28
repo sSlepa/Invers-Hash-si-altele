@@ -1,0 +1,11 @@
+# Ignore everything by default
+*
+
+# But don't ignore these file types
+!*.cpp
+!*.h
+!README.md
+!.gitignore
+
+# Don't ignore directories (needed for git to traverse subdirectories)
+!*/
