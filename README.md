@@ -31,6 +31,7 @@ This repository features a diverse collection of advanced algorithms and data st
 ### Data Structures
 
 1. **Tree Structures**
+   - **Trie with Autocomplete (`Trie_Autocomplete.cpp`)**: Prefix tree implementation with insert, search, startsWith, and autocomplete functionality. Efficiently finds all words matching a given prefix with DFS traversal.
    - **Red-Black Tree Insertion (`RB_Insert.cpp`)**: Implements insertion with balancing via rotations and color adjustments.
    - **Subarray Divisibility (`Subarray_Divisibility.cpp`)**: CSES.fi problem implemented using red-black trees instead of standard maps for efficient prefix sum tracking.
 
