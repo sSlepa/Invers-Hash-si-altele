@@ -89,6 +89,8 @@ public:
     ~Trie() {
         deleteTrie(root);
     }
+    Trie(const Trie&) = delete;
+    Trie& operator=(const Trie&) = delete;
 
     void insert(const string& word) {
         TrieNode* current = root;
