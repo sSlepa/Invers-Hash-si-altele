@@ -75,10 +75,19 @@ private:
             autocompleteHelper(pair.second, prefix + pair.first, results, limit);
         }
     }
+    void deleteTrie(TrieNode* node) {
+        for (auto& pair : node->children) {
+            deleteTrie(pair.second);
+        }
+        delete node;
+    }
 
 public:
     Trie() {
         root = new TrieNode();
+    }
+    ~Trie() {
+        deleteTrie(root);
     }
 
     void insert(const string& word) {
