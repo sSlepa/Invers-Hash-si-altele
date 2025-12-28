@@ -6,50 +6,57 @@ This repository features a diverse collection of advanced algorithms and data st
 
 ### Algorithms
 
-1. **CPU Clock Simulation (`CPU_Clock.cpp`)**
-   - Outputs the elapsed time of an algorithm.
+1. **String Matching Algorithms**
+   - **Aho-Corasick Algorithm (`AhoCorasick.h`)**: Multi-pattern string matching using trie-based approach with failure links. Efficiently finds all occurrences of multiple pattern strings in a text.
+   - **Rabin-Karp Algorithm (`RabinKarp.cpp`)**: Efficient string searching using rolling hash technique with polynomial hashing.
+   - **KMP String Matching (`String Matching.cpp`)**: Knuth-Morris-Pratt algorithm implementation using prefix function for pattern matching.
 
-2. **String Matching Algorithms**
-   - **Rabin-Karp Algorithm (`RabinKarp.cpp`)**: Efficient string searching using hashing.
-   - **Generic String Matching (`String Matching.cpp`)**: General implementation of string matching techniques using KMP.
+2. **Primality Testing**
+   - **Rabin-Miller Test (`RabinMiller.cpp`)**: Probabilistic primality test supporting very large numbers (up to 300+ digits) with custom arbitrary-precision arithmetic.
+   - **Fermat's Little Theorem (`FermaPrimeChecker.cpp`)**: Fast probabilistic primality testing for numbers up to 10<sup>18</sup> using fast exponentiation.
+   - **Sieve of Eratosthenes (`Sieve.cpp`)**: Classic algorithm to find all prime numbers up to a given limit (up to 500,000).
 
-3. **Primality Testing**
-   - **Rabin-Miller Test (`RabinMiller.cpp`)**: A probabilistic algorithm to test if a number is prime.
-   - **Fermat's Little Theorem (`FermaPrimeChecker.cpp`)**: Fastes way to check if a number is prime. Can be used even for N <= 10<sup>18
-   - **Simple Sieve of Eratosthenes Algorithm (`Sieve.cpp`)**: An algorithm used to find all prime numbers up to a given limit.
+3. **Graph Algorithms**
+   - **Lee's Algorithm (`lee.cpp`)**: BFS-based pathfinding in 2D grids, finds shortest path while avoiding obstacles.
+   - **Susan Problem (`susan.cpp`)**: 3D variant of Lee's algorithm for navigating tower structures with special tiles (pbinfo.ro problem).
+   - **K-Shortest Paths (`chromosome.cpp`)**: Dijkstra-based approach to find K shortest distinct paths from source to destination.
 
-4. **Subarray Divisibility (`Subarray_Divisibility.cpp`)**
-   - CSES.fi problem that was implemented using red-black trees instead of a map.
+4. **Hashing Techniques and Optimization**
+   - **Hash Pairs (`HashPairs_ExponentialLOG.cpp`)**: Custom hash function for storing pairs in unordered_map with polynomial hashing.
+   - **Fast Exponentiation (`HashPairs_ExponentialLOG.cpp`)**: Binary exponentiation for fast power computation.
 
-5. **Hashing Techniques and fast exponentiation**
-   - **Hash pairs for unordered_map (`HashPairs_ExponentialLOG.cpp`)**: Advanced hash function techniques for specific use cases.
-   - **Fast exponentiation (`HashPairs_ExponentialLOG.cpp`)**: Fastes way to raise a number to a power.
+5. **Performance Measurement**
+   - **CPU Clock (`CPU_Clock.cpp`)**: High-resolution timing utility using Windows API for algorithm benchmarking.
 
 ### Data Structures
 
-1. **Red-Black Tree Insertion (`RB_Insert.cpp`)**
-   - Implements insertion in a Red-Black Tree, maintaining its balancing properties.
+1. **Tree Structures**
+   - **Red-Black Tree Insertion (`RB_Insert.cpp`)**: Implements insertion with balancing via rotations and color adjustments.
+   - **Subarray Divisibility (`Subarray_Divisibility.cpp`)**: CSES.fi problem implemented using red-black trees instead of standard maps for efficient prefix sum tracking.
 
-2. **Deque Parsing (`deque_Parse.cpp`)**
-   - A parser that efficiently processes the input and adds it into a C++ STL Deque.
+2. **Caching and Concurrency**
+   - **LRU Cache (`LRU_Cache.cpp`)**: Thread-safe Least Recently Used cache with template support for arbitrary key-value types, using mutex locks and unordered_map.
+   - **Producer-Consumer Queue (`ProducerConsumer.cpp`)**: Thread-safe bounded queue implementation with condition variables for synchronization between producers and consumers.
 
-3. **Linked Lists (`liste.cpp`)**
-   - A collection of linked list operations and utilities. See if you can find anything usefull :) .
+3. **Smart Pointers (Custom Implementations)**
+   - **Shared Pointer (`sharedptr.cpp`)**: Custom implementation of std::shared_ptr with atomic reference counting and proper RAII resource management.
+   - **Unique Pointer (`uniqueptr.cpp`)**: Custom implementation of std::unique_ptr with exclusive ownership, move semantics, and automatic cleanup.
+
+4. **Linear Data Structures**
+   - **Deque Parsing (`deque_Parse.cpp`)**: Efficient input parser that processes and loads data into C++ STL Deque.
+   - **Linked Lists (`liste.cpp`)**: Collection of linked list operations and utilities.
 
 ### Specialized Implementations
 
-1. **Coupling Algorithm (`Cuplaj.cpp`)**
-   - Solves a coupling or pairing problem using graph theory principles.
+1. **Graph Theory**
+   - **Coupling Algorithm (`Cuplaj.cpp`)**: Solves coupling or pairing problems using graph theory principles.
 
-2. **Matrix Filling (`Fill_mat_with_L.cpp`)**
-   - Efficiently fills matrices based on specific rules or conditions.
+2. **Matrix Operations**
+   - **Matrix Filling (`Fill_mat_with_L.cpp`)**: Efficiently fills matrices based on specific rules or conditions.
 
-3. **Custom Algorithms**
-   - **Lee Algorithm (`lee.cpp`)**: Implements a breadth-first search algorithm for pathfinding.
+3. **Data Processing**
    - **Normalization (`normalizare.cpp`)**: Applies data normalization techniques for specific datasets.
-
-4. **Susan Problem (`susan.cpp`)**
-   - 3 dimensional Lee's algorithm problem which can be found on pbinfo.ro.
+   - **Stack Trace Processing (`StackTrace.cpp`)**: Processes stack trace samples to detect function entry/exit points by comparing consecutive samples.
 
 ## Usage
 
