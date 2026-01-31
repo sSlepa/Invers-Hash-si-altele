@@ -41,6 +41,8 @@ This repository features a diverse collection of advanced algorithms and data st
    - **Rate Limiter (`RateLimiter.cpp`)**: Token bucket algorithm for rate limiting with automatic token refill. Thread-safe implementation using steady_clock for precise timing and mutex locks.
    - **Thread Pool (`ThreadPool.cpp`)**: Pool of worker threads that execute tasks from a queue. Supports dynamic task submission, graceful shutdown, and proper cleanup using condition variables for synchronization.
    - **Read-Write Lock (`ReadWriteLock.cpp`)**: Synchronization primitive allowing concurrent reads but exclusive writes. Implements writer starvation prevention by blocking new readers when writers are waiting.
+   - **Deadlock Detector (`DeadLockDetect.cpp`)**: Detects circular wait conditions (deadlocks) using DFS cycle detection on a wait graph. Tracks thread-resource relationships and identifies potential deadlocks.
+   - **Ring Buffer (`RingBuffer.cpp`)**: Thread-safe fixed-size circular buffer for streaming data. Overwrites oldest data when full, supports push/pop operations with mutex synchronization.
 
 3. **Smart Pointers (Custom Implementations)**
    - **Shared Pointer (`sharedptr.cpp`)**: Custom implementation of std::shared_ptr with atomic reference counting and proper RAII resource management.
