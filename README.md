@@ -39,6 +39,8 @@ This repository features a diverse collection of advanced algorithms and data st
    - **LRU Cache (`LRU_Cache.cpp`)**: Thread-safe Least Recently Used cache with template support for arbitrary key-value types, using mutex locks and unordered_map.
    - **Producer-Consumer Queue (`ProducerConsumer.cpp`)**: Thread-safe bounded queue implementation with condition variables for synchronization between producers and consumers.
    - **Rate Limiter (`RateLimiter.cpp`)**: Token bucket algorithm for rate limiting with automatic token refill. Thread-safe implementation using steady_clock for precise timing and mutex locks.
+   - **Thread Pool (`ThreadPool.cpp`)**: Pool of worker threads that execute tasks from a queue. Supports dynamic task submission, graceful shutdown, and proper cleanup using condition variables for synchronization.
+   - **Read-Write Lock (`ReadWriteLock.cpp`)**: Synchronization primitive allowing concurrent reads but exclusive writes. Implements writer starvation prevention by blocking new readers when writers are waiting.
 
 3. **Smart Pointers (Custom Implementations)**
    - **Shared Pointer (`sharedptr.cpp`)**: Custom implementation of std::shared_ptr with atomic reference counting and proper RAII resource management.
