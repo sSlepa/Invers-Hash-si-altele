@@ -43,6 +43,7 @@ This repository features a diverse collection of advanced algorithms and data st
    - **Read-Write Lock (`ReadWriteLock.cpp`)**: Synchronization primitive allowing concurrent reads but exclusive writes. Implements writer starvation prevention by blocking new readers when writers are waiting.
    - **Deadlock Detector (`DeadLockDetect.cpp`)**: Detects circular wait conditions (deadlocks) using DFS cycle detection on a wait graph. Tracks thread-resource relationships and identifies potential deadlocks.
    - **Ring Buffer (`RingBuffer.cpp`)**: Thread-safe fixed-size circular buffer for streaming data. Overwrites oldest data when full, supports push/pop operations with mutex synchronization.
+   - **Sliding Window Counter (`SlidingWindow.cpp`)**: Counts events within a configurable time window (e.g., requests in last 60 seconds). Automatically evicts expired events and aggregates counts by timestamp.
 
 3. **Smart Pointers (Custom Implementations)**
    - **Shared Pointer (`sharedptr.cpp`)**: Custom implementation of std::shared_ptr with atomic reference counting and proper RAII resource management.
